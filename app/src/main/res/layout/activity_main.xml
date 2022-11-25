@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <com.here.sdk.mapview.MapView
+        android:id="@+id/map_view2"
+        android:layout_width="414dp"
+        android:layout_height="504dp"
+        android:layout_marginBottom="224dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="7dp" >
+
+    </com.here.sdk.mapview.MapView>
+
+    <com.here.sdk.mapview.MapView
+        android:id="@+id/map_view1"
+        android:layout_width="414dp"
+        android:layout_height="504dp"
+        android:layout_marginBottom="224dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="7dp" >
+
+    </com.here.sdk.mapview.MapView>
+
+    <com.here.sdk.mapview.MapView
+        android:id="@+id/map_view"
+        android:layout_width="414dp"
+        android:layout_height="504dp"
+        android:layout_marginBottom="224dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="7dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="119dp"
+        android:layout_height="46dp"
+        android:layout_weight="1"
+        android:onClick="geocodeAnAddressButtonClicked"
+        android:text="Police "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.865" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="104dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:onClick="searchExampleButtonClicked"
+        android:text="Hospitals"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.864" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="104dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:onClick="geocodeAnAddressButtonClicked1"
+        android:text="Fire Station"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.864" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
